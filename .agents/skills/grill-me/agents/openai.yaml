@@ -1,0 +1,5 @@
+interface:
+  display_name: "Погриль меня"
+  short_description: "Заточи план через интервью"
+policy:
+  allow_implicit_invocation: false
