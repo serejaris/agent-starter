@@ -7,13 +7,13 @@
 ## Структура рабочей папки
 
 ```text
-my-workspace/
-├── AGENTS.md                # или CLAUDE.md
-├── sources/                 # входы процесса
-├── output/                  # проверяемые результаты
-├── evidence-log.md          # история прогонов
-└── .agents/skills/          # Codex
-    └── <skill>/SKILL.md
+agent-starter/                       # рабочая папка проекта
+├── AGENTS.md                        # правила проекта для Codex и других агентов
+├── CLAUDE.md -> AGENTS.md           # те же правила для Claude Code
+├── .agents/
+│   └── skills/                      # общая библиотека способов работы
+│       └── <skill>/
+│           └── SKILL.md             # инструкция одного скилла
+└── .claude/
+    └── skills -> ../.agents/skills  # доступ Claude Code к общей библиотеке
 ```
-
-Тестовый скилл `hello-world` позволяет проверить настройку папки до начала реальной работы.
