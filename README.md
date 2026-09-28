@@ -18,6 +18,7 @@
 
 ```text
 agent-starter/                       # рабочая папка проекта
+├── LICENSE                          # MIT
 ├── AGENTS.md                        # правила проекта для Codex и других агентов
 ├── CLAUDE.md -> AGENTS.md           # те же правила для Claude Code
 ├── .agents/
@@ -28,7 +29,12 @@ agent-starter/                       # рабочая папка проекта
 │       │   └── SKILL.md             # проверка и настройка штаба
 │       └── pc-avatar/
 │           ├── SKILL.md             # аватар агента в штабе
-│           └── player.html          # плеер 3D-сцены
+│           ├── player.html          # плеер 3D-сцены
+│           └── THIRD_PARTY_NOTICES.md  # лицензии библиотек в плеере
 └── .claude/
     └── skills -> ../.agents/skills  # доступ Claude Code к общей библиотеке
 ```
+
+## Лицензия
+
+MIT — см. [LICENSE](LICENSE). Библиотеки, собранные в `player.html`, идут под своими лицензиями: [THIRD_PARTY_NOTICES.md](.agents/skills/pc-avatar/THIRD_PARTY_NOTICES.md).
