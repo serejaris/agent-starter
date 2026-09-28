@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "about": "Набор деталей головы аватара агента. Тело робота — харнес, одно на всех агентов харнеса. Голову модель собирает себе сама при первом запуске: цвет из palettes, глаза из eyes, примету из signs — только детали, у которых from не выше её редкости. Редкость выпадает один раз по весам weight, блестящий — с шансом shiny.chance процентов. Запись — ключ «харнес/семейство модели», пример — example.",
+  "rarities": [
+    { "id": "common", "name": "обычная", "weight": 60, "stars": 1 },
+    { "id": "uncommon", "name": "необычная", "weight": 25, "stars": 2 },
+    { "id": "rare", "name": "редкая", "weight": 10, "stars": 3 },
+    { "id": "epic", "name": "эпическая", "weight": 4, "stars": 4 },
+    { "id": "legendary", "name": "легендарная", "weight": 1, "stars": 5 }
+  ],
+  "shiny": { "chance": 1, "name": "блестящий", "about": "глазурь на голове и искры вокруг неё; выпадает при любой редкости" },
+  "palettes": [
+    { "id": "clay-light", "name": "глина", "color": "#efc3aa", "dark": "#cf9b80", "from": "common" },
+    { "id": "oat", "name": "овёс", "color": "#ebdcc3", "dark": "#c8b28e", "from": "common" },
+    { "id": "mist", "name": "туман", "color": "#cfd8e0", "dark": "#a2afbd", "from": "common" },
+    { "id": "lilac", "name": "сирень", "color": "#d6cfe4", "dark": "#aca2c6", "from": "common" },
+    { "id": "butter", "name": "масло", "color": "#f1dc9f", "dark": "#cdb46a", "from": "uncommon" },
+    { "id": "mint", "name": "мята", "color": "#c2ddcd", "dark": "#90b89f", "from": "uncommon" },
+    { "id": "brick", "name": "кирпич", "color": "#dc9b7f", "dark": "#b5755a", "from": "rare" },
+    { "id": "sky", "name": "небо", "color": "#a9c1e4", "dark": "#7c98c2", "from": "rare" },
+    { "id": "plum", "name": "слива", "color": "#b59ac7", "dark": "#8b72a1", "from": "epic" },
+    { "id": "night", "name": "ночь", "color": "#4f5460", "dark": "#d7b46c", "from": "legendary" }
+  ],
+  "eyes": [
+    { "id": "pill", "name": "пилюли", "about": "два вертикальных бруска — глаза семьи роботов", "from": "common" },
+    { "id": "dot", "name": "точки", "about": "две круглые точки", "from": "common" },
+    { "id": "wide", "name": "щёлки", "about": "две горизонтальные щёлки, спокойный взгляд", "from": "common" },
+    { "id": "ring", "name": "кольца", "about": "два полых кольца, любопытный взгляд", "from": "common" },
+    { "id": "slant", "name": "прищур", "about": "бруски с наклоном к переносице, сосредоточенный взгляд", "from": "common" },
+    { "id": "visor", "name": "визор", "about": "одна полоса во весь экран", "from": "common" }
+  ],
+  "signs": [
+    { "id": "antenna", "name": "антенна", "about": "прямая антенна с маячком на круглой подставке", "from": "common" },
+    { "id": "fin", "name": "плавник", "about": "плавник вдоль макушки, маячок сидит в плавнике", "from": "common" },
+    { "id": "periscope", "name": "перископ", "about": "труба смотрит вперёд над лентой, маячок в окуляре", "from": "common" },
+    { "id": "spring", "name": "пружина", "about": "маячок на пружине, покачивается", "from": "uncommon" },
+    { "id": "dish", "name": "тарелка", "about": "тарелка-локатор на мачте медленно поворачивается, маячок в фокусе", "from": "uncommon" },
+    { "id": "orbit", "name": "орбита", "about": "тонкое наклонное кольцо с бусиной вокруг маячка; бусина бежит быстрее, когда модель думает", "from": "rare" },
+    { "id": "propeller", "name": "пропеллер", "about": "пропеллер на мачте, крутится быстрее, когда модель думает; маячок на втулке", "from": "epic" },
+    { "id": "lamp", "name": "лампа", "about": "лампа вместо маячка: тлеет всегда, горит, когда модель читает, теплеет на вызове", "from": "legendary" }
+  ],
+  "example": {
+    "claude-code/opus": { "rarity": "rare", "shiny": false, "head": { "color": "clay-light", "eyes": "pill", "sign": "orbit" }, "tape": "opus 5.5", "made": "2026-09-28" }
+  },
+  "presets": {
+    "opus-5.5": { "rarity": "rare", "shiny": false, "head": { "color": "clay-light", "eyes": "pill", "sign": "orbit" }, "tape": "opus 5.5" },
+    "opus": { "rarity": "common", "shiny": false, "head": { "color": "clay-light", "eyes": "pill", "sign": "antenna" }, "tape": "opus" },
+    "sonnet": { "rarity": "common", "shiny": false, "head": { "color": "oat", "eyes": "dot", "sign": "antenna" }, "tape": "sonnet" },
+    "glm": { "rarity": "common", "shiny": false, "head": { "color": "lilac", "eyes": "wide", "sign": "fin" }, "tape": "glm" },
+    "deepseek": { "rarity": "common", "shiny": false, "head": { "color": "mist", "eyes": "ring", "sign": "periscope" }, "tape": "deepseek" }
+  }
+}
