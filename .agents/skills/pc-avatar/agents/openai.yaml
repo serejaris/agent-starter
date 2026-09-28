@@ -1,0 +1,3 @@
+interface:
+  display_name: "Аватар"
+  short_description: "Показать агента в штабе 3D-сценой: avatar/ в папке штаба"
