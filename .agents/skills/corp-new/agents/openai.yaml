@@ -1,3 +1,0 @@
-interface:
-  display_name: "Новый отдел"
-  short_description: "Создать отдел штаба и связать его со штабом; нет штаба — поставить из agent-starter"
