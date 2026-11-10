@@ -1,6 +1,8 @@
 # Third-party notices
 
-`player.html` is a single-file build that bundles the packages below. Their licenses and copyright notices follow.
+`player.html` and `glass.html` are single-file builds that bundle the packages below; `glass.html` bundles only three (with its RoundedBoxGeometry and RoomEnvironment examples). Their licenses and copyright notices follow.
+
+The logos of Claude, OpenAI, Gemini, Cursor, DeepSeek and OpenCode embedded in `glass.html` belong to their owners and only mark the harness or model on a sticker.
 
 ## react 19.3.0 — MIT
 
